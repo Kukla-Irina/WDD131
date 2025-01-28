@@ -1,21 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
- :root {
- --primary-color: #52489c;
- --secondary-color: #59c3c3;
- --accent-color: #f45b69;
- --text-dark: #333;
- --text-light: #ebebeb;
- --primary-font: Arial, Helvetica,sans-serif;
- --secondary-font: Mooli, san-serif;
- }
-
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: Mooli, san-serif;
+}
 
 /* General styles */
 body {
-    font-family: var(--primary-font);
-    font-size: 1.2em;
-    background-color: #e9e9e9;
-    color: #333;
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  background-color: #e9e9e9;
+  color: #333;
+}
+
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-items: center;
+  z-index: 10;
+  color: white;
+}
+
+.viewer img {
+  max-height: 100%;
 }
 
 a:link,
@@ -25,127 +43,124 @@ a:visited {
 
 /* Header */
 header {
-    background-color: #6b5b95;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #6b5b95;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 header nav {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 header button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    text-decoration: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 nav ul li {
-    display: block;
+  display: block;
 }
 
 nav ul li a {
-    text-decoration: underline;
-    color: white;
-    font-size: 1.2rem;
+  text-decoration: underline;
+  color: white;
+  font-size: 1.2rem;
 }
 
 /* Main content */
 main {
-    text-align: center;
-    margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
 }
 
 main h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 /* Gallery */
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 300px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 figure {
-    margin: 0;
-    border: 2px solid #ccc;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  border: 2px solid #ccc;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
- img {
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
 /* Footer */
 footer {
-    background-color: #6b5b95;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9rem;
+  background-color: #6b5b95;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
 }
 
 /* Responsive adjustments */
 @media (min-width: 700px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-        max-width: 600px;
-      }
-
-      nav {
-        display: none;
-      }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 1000px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 900px;
-      }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+  }
 
-      nav {
-        display: block;
-    }
-
-    button {
-        display: none;
-    }
-
-
+  nav {
+    display: block;
+  }
+  .menu-button {
+    display: none;
+  }
 }
