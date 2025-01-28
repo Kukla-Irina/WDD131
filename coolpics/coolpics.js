@@ -40,7 +40,7 @@ function viewHandler(event) {
   // Create the viewer template
   const viewerTemplate = `<div class="viewer">
       <button class="close-viewer">X</button>
-      <img src="${fullImageSrc}" alt="${"picture"}">
+      <img src="${fullImageSrc}" alt="picture">
       </div>`;
 
   // Insert the viewerTemplate into the top of the body element
