@@ -143,6 +143,10 @@ footer {
     grid-template-columns: 1fr 1fr;
     max-width: 600px;
   }
+
+  .viewer img {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -155,6 +159,10 @@ footer {
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 900px;
+  }
+
+  .viewer img {
+    max-width: 50%;
   }
 
   nav {
