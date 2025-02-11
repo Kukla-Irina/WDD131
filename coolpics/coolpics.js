@@ -35,7 +35,7 @@ function viewHandler(event) {
   const srcParts = clickedElement.src.split("-");
 
   // Construct the new image file name by adding "-full.jpeg" to the first part of the array
-  const fullImageSrc = `${srcParts[0]}-full.jpeg`;
+  const fullImageSrc = clickedElement.src.replace("-sm", "-full");
 
   // Create the viewer template
   const viewerTemplate = `<div class="viewer">
