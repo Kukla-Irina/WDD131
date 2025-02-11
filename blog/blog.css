@@ -37,7 +37,7 @@ nav a {
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .review-layout {
@@ -56,4 +56,28 @@ nav a {
 }
 .skiptocontent a:focus {
   top: 10px;
+}
+
+.meta p:first-child {
+  font-size: 1.2rem;
+}
+
+.meta {
+  margin: 0.5rem 0;
+  border-right: 2px solid #efc69b;
+  padding: 0 20px;
+  text-align: right;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.content img {
+  display: block;
+  margin: 0 auto;
+}
+
+.review {
+  margin-bottom: 40px;
 }
