@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2 {
-    color: #4caf50;
+    color: #225b24;
     text-align: center;
     font-family: 'Roboto', sans-serif !important;
 }
@@ -26,7 +26,7 @@ h1, h2 {
 
 button {
     padding: 8px 15px;
-    background-color: #4CAF50;
+    background-color: #225b24;
     color: white;
     border: none;
 }
@@ -63,7 +63,7 @@ nav {
 nav a {
     margin-right: 15px;
     text-decoration: none;
-    color: #4CAF50;
+    color: #225b24;
 }
 
 footer {
